@@ -1,12 +1,20 @@
 import React from "react";
 
+const cartElement = [
+    {title: 'Colors', price: 100, imageURL: 'https://prasadyash2411.github.io/ecom-website/img/Album%201.png', quantity: 2},
+    {title: 'Colors', price: 100, imageURL: 'https://prasadyash2411.github.io/ecom-website/img/Album%201.png', quantity: 2},
+    {title: 'Colors', price: 100, imageURL: 'https://prasadyash2411.github.io/ecom-website/img/Album%201.png', quantity: 2},
+    {title: 'Colors', price: 100, imageURL: 'https://prasadyash2411.github.io/ecom-website/img/Album%201.png', quantity: 2},
+    {title: 'Colors', price: 100, imageURL: 'https://prasadyash2411.github.io/ecom-website/img/Album%201.png', quantity: 2},
+
+];
+
+
+
 
 const Cart = ()=>{
     return (
         <>
-            <button type="button" className="btn btn-outline-info btn-sm">
-            Cart <span className="badge text-bg-secondary bg-danger">4</span>
-            </button>
         </>
     )
 };

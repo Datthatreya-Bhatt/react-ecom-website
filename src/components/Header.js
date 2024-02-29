@@ -1,9 +1,11 @@
 import React from "react";
 
 
-import Cart from './Cart';
+
 
 const Header = () => {
+
+   
     return (
         <nav className="navbar navbar-dark bg-dark fixed-top text-white"> {/* Apply Bootstrap classes for styling */}
             <ul className="navbar-nav mx-auto d-flex flex-row"> {/* Apply Bootstrap classes for styling */}
@@ -11,7 +13,10 @@ const Header = () => {
                 <li className="nav-item me-3">Store</li>
                 <li className="nav-item me-3">About</li>
             </ul>
-            <Cart className="ml-auto" /> {/* Apply Bootstrap classes for styling */}
+            
+            <button type="button" className="btn btn-outline-info btn-sm" >
+                Cart <span className="badge text-bg-secondary bg-danger">4</span>
+            </button>
         </nav>
     )
 };
