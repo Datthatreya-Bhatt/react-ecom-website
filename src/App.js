@@ -3,19 +3,22 @@ import React from 'react';
 import Header from './components/Header';
 import Body from './components/Body';
 import Footer from './components/Footer';
-import Title from './components/Title';
+
+import CartProvider from './store/Cart-Provider';
+
 
 function App() {
 
 
 
   return (
-    <>
+   
+    <CartProvider>
       <Header/>
-      <Title/>
       <Body/>
       <Footer/>
-    </>
+    </CartProvider>
+   
   );
 }
 

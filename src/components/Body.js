@@ -1,16 +1,19 @@
-import React, {useState} from "react";
+import React, {useContext} from "react";
 
 import Product from "./Product";
 import Cart from "./Cart";
+import Title from "./Title";
+import CartContext from "../store/Cart-Context";
 
 const Body = ()=>{
-    const [showCart, setShowCart] = useState(false);
+    const cartCntxt = useContext(CartContext);
 
 
     return (
         <>
+            <Title/>
             <Product/>
-            {showCart && <Cart setShowCart={setShowCart}/>}
+            {cartCntxt.cartOpen && <Cart/>}
             
         </>
     )
