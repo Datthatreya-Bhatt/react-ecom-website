@@ -1,0 +1,22 @@
+.tour-item {
+    display: flex;
+    border-bottom: 1px solid black;
+    padding: 10px;
+  }
+
+
+  .tour-date {
+    width: 12%;
+  }
+
+  .tour-place{
+    
+        width: 25%;
+        color: #777;
+      
+  }
+
+  .tour-spec-place{
+    width: 53%;
+    color: #777;
+  }

@@ -4,7 +4,7 @@ import React from "react";
 const Title = ()=>{
     return (
         <div className="container-fluid" style={{background: 'black', color: 'wheat'}} >
-          <h5>The Generic</h5>
+          <h1>The Generic</h1>
           
         </div>
       )

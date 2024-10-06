@@ -1,4 +1,7 @@
 import React from "react";
+import Header from "./Header";
+import Product from "./Product";
+import Footer from "./Footer";
 
 
 
@@ -6,7 +9,9 @@ function Store(){
 
     return (
         <>
-            <h1>This is store</h1> 
+            <Header/>
+            <Product/>
+            <Footer/>
         </>
     )
 };
