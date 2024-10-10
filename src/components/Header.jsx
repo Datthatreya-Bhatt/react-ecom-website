@@ -18,6 +18,7 @@ const Header = () => {
                 <li className="nav-item me-5"><NavLink to="/" className={({isActive})=> isActive ? '': ''} end>Home</NavLink></li>
                 <li className="nav-item me-3"><NavLink to="/store" className={({isActive})=> isActive ? '': ''}>Store   </NavLink></li>
                 <li className="nav-item me-3"> <NavLink to="/about" className={({isActive})=> isActive ? '': ''}>About</NavLink></li>
+                <li className="nav-item me-3"> <NavLink to="/contact" className={({isActive})=> isActive ? '': ''}>Contact</NavLink></li>
             </ul>
             
             <button type="button" className="btn btn-outline-info btn-sm me-3" onClick={()=>cartCntxt.setCartOpen(true)}>
