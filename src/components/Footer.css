@@ -1,0 +1,5 @@
+.footer-container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: skyblue;
+}

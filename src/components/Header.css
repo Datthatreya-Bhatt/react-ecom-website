@@ -1,0 +1,29 @@
+.header-container{
+    width: 100vw;
+    display: flex;
+    background-color: black;
+    color: white;
+    border-bottom: 2px solid white;
+    justify-content: space-evenly;
+
+}
+
+
+.header-item-normal{
+    color: white;
+}
+
+
+/* .items{
+    color: white;
+} */
+
+/* .header-items-1{
+    color: white;
+}
+.header-items-2:hover{
+    color: blue;
+} */
+
+
+

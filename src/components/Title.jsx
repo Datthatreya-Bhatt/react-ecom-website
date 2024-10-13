@@ -1,10 +1,11 @@
 import React from "react";
 
+import './Title.css'
 
 const Title = ()=>{
     return (
-        <div className="container-fluid" style={{background: 'black', color: 'wheat'}} >
-          <h1>The Generic</h1>
+        <div className="title-container" >
+          <h1 className="title-item">The Generic</h1>
           
         </div>
       )

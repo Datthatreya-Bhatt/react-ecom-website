@@ -1,0 +1,8 @@
+.title-container{
+    display: flex;
+    background-color: hsl(0, 0%, 47%);
+    font-size: 100;
+    justify-content: center;
+}
+
+
