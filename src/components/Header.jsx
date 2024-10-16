@@ -30,6 +30,9 @@ const Header = () => {
         <NavLink activeClassName="header-item-normal" to="/contact">Contact</NavLink>
       </div>
       <div>
+        <NavLink activeClassName="header-item-normal" to="/login">Login</NavLink>
+      </div>
+      <div>
         <button
           type="button"
           className="btn btn-outline-info btn-sm me-3"

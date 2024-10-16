@@ -10,6 +10,7 @@ import About from "./components/About";
 import Store from "./components/Store";
 import Contact from "./components/Contact";
 import Product_detail from "./components/Product-detail";
+import Login from "./components/Login";
 
 // const router = createBrowserRouter([
 //   { path: "/", element: <App /> },
@@ -37,6 +38,9 @@ function App() {
         </Route>
         <Route path="/contact">
           <Contact />
+        </Route>
+        <Route path="/login">
+          <Login />
         </Route>
 
         <Route path="/product/:productId">

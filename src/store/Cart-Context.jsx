@@ -10,6 +10,8 @@ const CartContext = React.createContext({
     setItems: ()=>{},
     total: 0,
     setTotal: ()=>{},
+    token: '',
+    saveToken: (token)=>{},
 
 });
 
