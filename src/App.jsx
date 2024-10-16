@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 
 import Header from "./components/Header";
 import Body from "./components/Body";
@@ -11,6 +11,7 @@ import Store from "./components/Store";
 import Contact from "./components/Contact";
 import Product_detail from "./components/Product-detail";
 import Login from "./components/Login";
+import CartContext from "./store/Cart-Context";
 
 // const router = createBrowserRouter([
 //   { path: "/", element: <App /> },
@@ -20,6 +21,8 @@ import Login from "./components/Login";
 // ]);
 
 function App() {
+  const cartCntxt = useContext(CartContext);
+
   return (
     <div>
       <Switch>
@@ -34,7 +37,8 @@ function App() {
           <About />
         </Route>
         <Route path="/store">
-          <Store />
+        {cartCntxt.isLoggedIn && <Store />}
+        {!cartCntxt.isLoggedIn && <Redirect to="/login"/>}
         </Route>
         <Route path="/contact">
           <Contact />

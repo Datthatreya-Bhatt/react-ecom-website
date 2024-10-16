@@ -8,6 +8,7 @@ console.log('main function called')
   const [token, setToken] = useState(initialToken);
 
   const [cartOpen, setCartOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [items, setItems] = useState([]);
   const [total, setTotal] = useState(0);
 
@@ -36,6 +37,7 @@ console.log('main function called')
     console.log(token, 'This is token')
     localStorage.setItem("token", token);
     setToken(token);
+    token.length ? setIsLoggedIn(true) : setIsLoggedIn(false)
   }
 
   const cartctx = {
@@ -49,6 +51,7 @@ console.log('main function called')
     setTotal: setTotal,
     saveToken: ()=> saveToken(token),
     token: token,
+    isLoggedIn: isLoggedIn,
   };
 
   return (

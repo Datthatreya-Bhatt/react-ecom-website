@@ -12,6 +12,7 @@ const CartContext = React.createContext({
     setTotal: ()=>{},
     token: '',
     saveToken: (token)=>{},
+    isLoggedIn: false,
 
 });
 
